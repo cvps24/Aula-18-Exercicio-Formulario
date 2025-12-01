@@ -1,12 +1,104 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <title>Formulário Completo</title>
 </head>
 <body>
+
+    <!-- 1 formulario-->
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+
+        <label>Nome completo:</label><br>
+        <input type="text" placeholder="Digite seu nome completo"><br>
+
+        <label>Email:</label><br>
+        <input type="email" placeholder="seuemail@exemplo.com"><br>
+
+        <label>Telefone (formato (XX)XXXXX-XXXX):</label><br>
+        <input type="tel" placeholder="(11)91234-5678"><br>
+
+        <label>Crie uma senha:</label><br>
+        <input type="password" placeholder="Digite sua senha"><br>
+
+        <label>Idade:</label><br>
+        <input type="number" placeholder="Sua idade"><br>
+
+        <label>Estado de entrega:</label><br>
+        <select>
+            <option>--Selecione seu estado--</option>
+            <option>SP</option>
+            <option>RJ</option>
+            <option>MG</option>
+            <option>RS</option>
+            <option>SC</option>
+            <option>PR</option>
+        </select><br>
+
+        <label>Envie uma foto da sua CNH:</label><br>
+        <input type="file">
+    </fieldset>
+
+    <!-- 2 formulario -->
+    <fieldset>
+        <legend>Escolha do Carro</legend>
+
+        <label>Escolha o modelo:</label><br>
+        <input type="radio" name="modelo"> BYD Seal<br>
+        <input type="radio" name="modelo"> BYD Han<br>
+        <input type="radio" name="modelo"> BYD Song Plus<br><br>
+
+        <label>Itens adicionais:</label><br>
+        <input type="checkbox"> Som Premium<br>
+        <input type="checkbox"> Ar-condicionado Digital<br>
+        <input type="checkbox"> Câmera 360°<br><br>
+
+        <label>Cor do carro:</label><br>
+        <input type="color"><br><br>
+
+        <label>Intensidade da cor (brilho):</label><br>
+        <input type="range" min="0" max="100" value="50">
+    </fieldset>
+
+    <!-- 3 formulario -->
+    <fieldset>
+        <legend>Entrega</legend>
+
+        <label>Data desejada para entrega:</label><br>
+        <input type="date"><br>
+
+        <label>Hora preferida para entrega:</label><br>
+        <input type="time"><br>
+
+        <label>Mês da compra:</label><br>
+        <input type="month">
+    </fieldset>
+
+    <!-- 4 formulario -->
+    <fieldset>
+        <legend>Sua Opinião</legend>
+
+        <label>Conte qual é a sua expectativa sobre o carro:</label><br>
+        <textarea placeholder="Exemplo: Espero que o carro tenha boa autonomia, seja confortável, silencioso e impressione os vizinhos!"></textarea>
+    </fieldset>
     
+    <!-- 5 formulario -->
+    <fieldset>
+        <legend>Avaliação dos Modelos BYD</legend>
+
+        <label>Avalie o BYD Dolphin Plus:</label><br>
+        <input type="number" placeholder="0 a 5 estrelas" min="0" max="5"><br><br>
+
+        <label>Avalie o BYD GS:</label><br>
+        <input type="number" placeholder="0 a 5 estrelas" min="0" max="5"><br><br>
+
+        <label>Avalie o BYD Mini:</label><br>
+        <input type="number" placeholder="0 a 5 estrelas" min="0" max="5"><br><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </fieldset>
+
 </body>
 </html>
